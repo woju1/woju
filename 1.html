@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>¸´ÖÆµ½¼ôÌù°åÊ¾Àı</title>
+    <meta charset="UTF-8">
+    <title>å¤åˆ¶åˆ°å‰ªè´´æ¿ç¤ºä¾‹</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
 
-<textarea id="myTextarea" rows="4" cols="50">ÄãºÃ£¬»¶Ó­À´µ½ÎÒµÄÍøÕ¾</textarea>
-<button id="myButton">¸´ÖÆ</button>
+<textarea id="myTextarea" rows="4" cols="50">ä½ å¥½ï¼Œæ¬¢è¿æ¥åˆ°æˆ‘çš„ç½‘ç«™</textarea>
+<button id="myButton">å¤åˆ¶</button>
 
 <script>
 $(document).ready(function(){
@@ -18,8 +19,8 @@ $(document).ready(function(){
         document.execCommand("copy");
         Swal.fire({
             icon: 'success',
-            title: 'ÒÑ¸´ÖÆ',
-            text: 'ÒÑ¸´ÖÆÎÄ±¾: ' + copyText.val(),
+            title: 'å·²å¤åˆ¶',
+            text: 'å·²å¤åˆ¶æ–‡æœ¬: ' + copyText.val(),
         });
     });
 });
