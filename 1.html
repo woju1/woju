@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>复制到剪贴板示例</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<textarea id="myTextarea" rows="4" cols="50">你好，欢迎来到我的网站</textarea>
+<button id="myButton">复制</button>
+
+<script>
+$(document).ready(function(){
+    $("#myButton").click(function(){
+        var copyText = $("#myTextarea");
+        copyText.select();
+        document.execCommand("copy");
+        Swal.fire({
+            icon: 'success',
+            title: '已复制',
+            text: '已复制文本: ' + copyText.val(),
+        });
+    });
+});
+</script>
+
+</body>
+</html>
